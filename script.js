@@ -1,5 +1,5 @@
 //grab list of card divs
-const cardslist = document.querySelectorAll(".cards");
+let cardslist = document.querySelectorAll(".cards");
 
 //Root card flip variables
 let cardIsFlipped = false;
@@ -10,10 +10,10 @@ let card2 = undefined;
 //flip 2 cards to match data attribute from div
 //if statement to prevent clicking on same exact card to match
 function flipCard() {
+  this.classList.add("flip");
   if (this === card1) {
     return;
   }
-  this.classList.add("flip");
   if (cardIsFlipped !== true) {
     cardIsFlipped = true;
     card1 = this;
@@ -40,6 +40,7 @@ function matchCards() {
       card2.classList.remove("flip");
     }, 500);
   }
+  checkWin(cardslist);
 }
 
 //shuffle cards and immediately invoke
@@ -49,3 +50,17 @@ function matchCards() {
     card.style.order = randomPos;
   });
 })();
+console.log(cardslist);
+
+function checkWin(arr) {
+  let flipCount = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].classList.contains("flip")) {
+      console.log('Child element with class "flip" found');
+      flipCount++;
+    }
+    if (flipCount === 16) {
+      alert("you have won!");
+    }
+  }
+}
