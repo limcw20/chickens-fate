@@ -64,3 +64,10 @@ function checkWin(arr) {
     }
   }
 }
+
+//add eventlistener to refresh page when reset button is clicked
+function flipAllBack() {
+  location.reload();
+}
+let resetButton = document.getElementById("reset-button");
+resetButton.addEventListener("click", flipAllBack);
