@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="heading"><h1>Memory Game</h1></div>
+      <div class="heading"><h1>Chickens' Fate</h1></div>
       <div class="format">
         <div class="cards cards-1" data-image="1">
           <img class="front-face" src="cards-images/1.jpg" />
@@ -79,8 +79,16 @@
         <button id="reset-button">Click here to reset</button>
       </div>
     </div>
-    <div class="wintext">You Win!!</div>
-    <div class="losetext">You Lose!!</div>
+    <div class="wintext">
+      <span id="largetext-win">You Win!!</span
+      ><span id="smalltext"> The chickens live happily ever after!</span>
+    </div>
+    <div class="losetext">
+      <span id="largetext-lose">You Lose!!</span>
+      <span id="smalltext"
+        >The chickens have landed into the consumers' hands!</span
+      >
+    </div>
 
     <script src="script.js"></script>
   </body>
