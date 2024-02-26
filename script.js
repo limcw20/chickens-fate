@@ -63,11 +63,17 @@ function checkWin(arr) {
       console.log('Child element with class "flip" found');
       flipCount++;
     }
-    if (flipCount === 14) {
-      document.querySelector(".wintext").style.display = "";
-    }
-    if (card1.dataset.image == 4 && card2.dataset.image == 4) {
+
+    if (
+      flipCount === 12 &&
+      card1.dataset.image == 4 &&
+      card2.dataset.image == 4
+    ) {
       document.querySelector(".losetext").style.display = "";
+    } else if (card1.dataset.image == 4 && card2.dataset.image == 4) {
+      document.querySelector(".losetext").style.display = "";
+    } else if (flipCount === 12) {
+      document.querySelector(".wintext").style.display = "";
     }
   }
 }
