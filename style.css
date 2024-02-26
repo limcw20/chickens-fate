@@ -86,3 +86,27 @@ body {
 .front-face {
   transform: rotateY(180deg);
 }
+
+.wintext {
+  display: flex;
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  font-size: 90px;
+  color: rgb(255, 255, 0);
+  background-color: rgba(0, 0, 92, 0.492);
+  align-items: center;
+  justify-content: center;
+}
+
+.losetext {
+  display: flex;
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  font-size: 90px;
+  color: rgb(255, 255, 0);
+  background-color: rgba(0, 0, 92, 0.492);
+  align-items: center;
+  justify-content: center;
+}

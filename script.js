@@ -1,3 +1,6 @@
+//Hide win/lose messages
+document.querySelector(".wintext").style.display = "none";
+document.querySelector(".losetext").style.display = "none";
 //grab list of card divs
 let cardslist = document.querySelectorAll(".cards");
 
@@ -52,6 +55,7 @@ function matchCards() {
 })();
 console.log(cardslist);
 
+//check win/lose criteria
 function checkWin(arr) {
   let flipCount = 0;
   for (let i = 0; i < arr.length; i++) {
@@ -59,12 +63,14 @@ function checkWin(arr) {
       console.log('Child element with class "flip" found');
       flipCount++;
     }
-    if (flipCount === 16) {
-      alert("you have won!");
+    if (flipCount === 14) {
+      document.querySelector(".wintext").style.display = "";
+    }
+    if (card1.dataset.image == 4 && card2.dataset.image == 4) {
+      document.querySelector(".losetext").style.display = "";
     }
   }
 }
-
 //add eventlistener to refresh page when reset button is clicked
 function flipAllBack() {
   location.reload();
