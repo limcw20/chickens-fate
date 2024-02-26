@@ -22,8 +22,8 @@ As an up-and-coming pet chicken owner, you are looking to rear afew chickens at 
 ## Screenshots
 
 ![alt text](https://github.com/limcw20/memory-game/blob/main/screenshots/game-start.jpg?raw=true)
-![alt text](https://github.com/limcw20/memory-game/blob/main/screenshots/game-win.jpg?raw=true)
 ![alt text](https://github.com/limcw20/memory-game/blob/main/screenshots/game-lose.jpg?raw=true)
+![alt text](https://github.com/limcw20/memory-game/blob/main/screenshots/game-win.jpg?raw=true)
 
 ## Next Steps
 
