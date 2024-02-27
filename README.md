@@ -1,6 +1,6 @@
 # Chickens' Fate
 
-As an up-and-coming pet chicken owner, you are looking to rear afew chickens at home! However, will these chickens be raised truly as pets, or meet their eventual demise as food? The fate of these chickens are in your hands!
+As an up-and-coming pet chicken owner, you are looking to rear afew chickens at home! However, living in a country where chickens are commonly seen as food -- will these chickens be raised truly as pets, or meet their eventual demise as food due to your temptations? The fate of these chickens are in your hands!
 
 ## Getting Started
 
@@ -11,7 +11,7 @@ As an up-and-coming pet chicken owner, you are looking to rear afew chickens at 
 - However, matching a set of roasted chicken cards will result in a loss.
 - Match all of chicken cards to win!
 
-[Click to Play!](url here)
+[Click to Play!](https://limcw20.github.io/chickens-fate/)
 
 ## Technologies Used
 
